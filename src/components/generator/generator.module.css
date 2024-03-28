@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 80px;
+    gap: 50px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.settings {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sizeAndColor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.textarea {
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: semibold;
+    font-size: 12px;
+    background-color: rgb(230, 231, 231);
+}
+
+.copyBtn {
+    width: 100px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(8, 8, 8, 0.914);
+    color: white;
+    cursor: pointer;
+}
+
+.shadowInputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.shadow {
+    background-color: rgb(229, 231, 231);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+p { 
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.stylesborder {
+    display: flex;
+    gap: 10px;
+}
+
+
+label{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 7px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: rgba(231, 231, 231, 0.914);;
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-color: rgba(231, 231, 231, 0.914);
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #000000;
+}
+
+@media screen and (max-width: 560px) {
+    .container {
+        padding: 30px;
+    }
+    .shadowInputs {
+        grid-template-columns: 1fr;
+    }
+    .sizeAndColor {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .result {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 30px;
+    }
+    .stylesborder {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
